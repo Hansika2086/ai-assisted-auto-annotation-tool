@@ -1,0 +1,44 @@
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+!.env*.example
+
+# JavaScript dependencies and build output
+node_modules/
+.next/
+out/
+.vercel/
+.DS_Store
+
+# Python environments and caches
+.venv/
+venv/
+backend/.venv/
+__pycache__/
+*.py[cod]
+
+# Local model weights
+*.pt
+*.pth
+*.onnx
+
+# Local uploaded data and generated output
+backend/uploads/*
+!backend/uploads/.gitkeep
+backend/outputs/*
+!backend/outputs/.gitkeep
+!backend/outputs/masks/
+!backend/outputs/exports/
+backend/outputs/masks/*
+!backend/outputs/masks/.gitkeep
+backend/outputs/exports/*
+!backend/outputs/exports/.gitkeep
+
+# Generated runs
+runs/
+
+# Local development tooling
+.snowflake/
+.v0-trash/
